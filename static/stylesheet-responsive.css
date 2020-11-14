@@ -1,0 +1,174 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+
+html{
+	font-size: 28px;
+}
+
+.body-bg{
+	background-color: rgba(193,130,128,.31);
+	width: 100%;
+	height: 100vh;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+/*Header Section*/
+
+.header{
+	width: 100%;
+	height: 10vh;
+	padding: 1.3vh;
+	box-sizing: border-box;
+	background-color: #C18280;
+	box-shadow: 2px 2px 5px black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.header h2{
+	color: #FFF1F0;
+	font-size: 1.5rem;
+}
+
+.contact{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+
+/*Calculator Container Section*/
+
+.calContainer{
+	margin: 8vh auto 0;
+	padding: 55px 20px 2px;
+	width: 388px;
+	box-sizing: border-box;
+	height: 510px;
+	background-color: #C18280;
+	border-radius: 12px;
+	border-width: 5px;
+	border-color: #FFAED2;
+	box-shadow: 5px 5px 15px #fff1f0ba, -2px -2px 15px #00000042;
+	border: none;
+}
+
+
+/*Screen of the Calculator*/
+
+.screen{
+	font-size: 28px;
+	color: #D5D8DC;
+	width: 265px;
+	height: 70px;
+	border-color: #FFAED2;
+	border-width: 4px;
+	border-radius: 12px;
+	margin: 15px auto;
+	background-color: white;
+	padding-right: 10px;
+	text-align: right;
+	overflow: hidden;
+	box-shadow: 2px 2px 5px 2px black;
+}
+
+table{
+	margin: auto;
+}
+
+
+button{
+	margin: 5px;
+	font-size:38px;
+	background-color: #FFC7C5;
+	text-align: center;
+	width: 60px;
+	height: 50px;
+	border: none;
+	border-radius: 12px;
+	cursor: pointer;
+	box-shadow: 2px 2px 5px black;
+}
+
+
+textarea:focus, button:focus{
+	outline: 0;
+}
+
+#equalButton{
+	height: 105px;
+	
+}
+
+@media only screen and (max-width: 420px)
+{
+	.header{
+		background-color: rgba(193,130,128,.0);
+		border-style: none;
+		box-shadow: 0px 0px;
+	}
+
+	.header h2{
+		display: none;
+	}
+
+	.calContainer{
+		margin: 0 auto;
+		width: 300px;
+		padding: 50px 3px 15px;
+		height: 502px;
+	}
+
+	.screen{
+		font-size: 25px;
+		width: 246px;
+		margin:2px auto 25px;
+		
+	}
+
+	button{
+		margin: 7px 2px;
+		font-size: 34px;
+		width: 57px;
+	}
+}
+
+@media only screen and (max-width: 300px)
+{
+	.header{
+		background-color: rgba(193,130,128,.0);
+		border-style: none;
+		box-shadow: 0px 0px;
+	}
+
+	.header h2{
+		display: none;
+	}
+
+	.calContainer{
+		margin: 0 auto;
+		width: 260px;
+		padding: 50px 2px 15px;
+		height: 502px;
+	}
+
+	.screen{
+		font-size: 25px;
+		width: 225px;
+		margin:2px auto 25px;
+		
+	}
+
+	button{
+		margin: 5px 5px;
+		font-size: 28px;
+		width: 47px;
+	}
+}
